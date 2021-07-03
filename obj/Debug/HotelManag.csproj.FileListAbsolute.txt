@@ -1,0 +1,11 @@
+C:\Users\Hp EliteBook\Desktop\lsi2\s4\NET\HotelManag\HotelManag\bin\Debug\HotelManag.exe.config
+C:\Users\Hp EliteBook\Desktop\lsi2\s4\NET\HotelManag\HotelManag\bin\Debug\HotelManag.exe
+C:\Users\Hp EliteBook\Desktop\lsi2\s4\NET\HotelManag\HotelManag\bin\Debug\HotelManag.pdb
+C:\Users\Hp EliteBook\Desktop\lsi2\s4\NET\HotelManag\HotelManag\obj\Debug\HotelManag.Hotel.resources
+C:\Users\Hp EliteBook\Desktop\lsi2\s4\NET\HotelManag\HotelManag\obj\Debug\HotelManag.Properties.Resources.resources
+C:\Users\Hp EliteBook\Desktop\lsi2\s4\NET\HotelManag\HotelManag\obj\Debug\HotelManag.UC.ucHotel.resources
+C:\Users\Hp EliteBook\Desktop\lsi2\s4\NET\HotelManag\HotelManag\obj\Debug\HotelManag.UC.ucRoom.resources
+C:\Users\Hp EliteBook\Desktop\lsi2\s4\NET\HotelManag\HotelManag\obj\Debug\HotelManag.csproj.GenerateResource.cache
+C:\Users\Hp EliteBook\Desktop\lsi2\s4\NET\HotelManag\HotelManag\obj\Debug\HotelManag.exe
+C:\Users\Hp EliteBook\Desktop\lsi2\s4\NET\HotelManag\HotelManag\obj\Debug\HotelManag.pdb
+C:\Users\Hp EliteBook\Desktop\lsi2\s4\NET\HotelManag\HotelManag\obj\Debug\HotelManag.csprojAssemblyReference.cache
