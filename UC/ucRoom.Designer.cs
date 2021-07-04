@@ -60,7 +60,7 @@
             // bookedToolStripMenuItem
             // 
             this.bookedToolStripMenuItem.Name = "bookedToolStripMenuItem";
-            this.bookedToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.bookedToolStripMenuItem.Size = new System.Drawing.Size(101, 22);
             this.bookedToolStripMenuItem.Text = "Book";
             this.bookedToolStripMenuItem.Click += new System.EventHandler(this.bookedToolStripMenuItem_Click);
             // 
@@ -69,6 +69,7 @@
             this.freeToolStripMenuItem.Name = "freeToolStripMenuItem";
             this.freeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.freeToolStripMenuItem.Text = "Free";
+            this.freeToolStripMenuItem.Click += new System.EventHandler(this.freeToolStripMenuItem_Click);
             // 
             // ucRoom
             // 

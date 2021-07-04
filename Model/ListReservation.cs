@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,22 +13,24 @@ namespace HotelManag.Model
         public cnxConfig cnx;
         public ListReservation()
         {
-           cnx = new cnxConfig();
-           listRes = cnx.GetReservations();
-            /*
-            Reservation res1 = new Reservation(1, new DateTime(2021, 8, 8));
-            Reservation res2 = new Reservation(6, new DateTime(2021, 8, 8));
-            Reservation res3 = new Reservation(8, new DateTime(2021, 9, 16));
-            Reservation res4 = new Reservation(6, new DateTime(2021, 9, 16));
-            Reservation res5 = new Reservation(8, new DateTime(2021, 8, 23));
-            listRes = new List<Reservation> 
-            { 
-                res1,
-                res2,
-                res3,
-                res4,
-                res5
-            }; */
+            listRes = new List<Reservation>();
+            getListRes();
+        }
+        public void getListRes()
+        {
+            using (MySqlConnection connection = cnxConfig.Connect())
+            {
+
+                MySqlCommand cmd = new MySqlCommand("SELECT * FROM reservation", connection);
+                MySqlDataReader dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    Model.Reservation res = new Model.Reservation(dr.GetInt32(0), dr.GetInt32(2), dr.GetDateTime(1));
+                    this.listRes.Add(res);
+                }
+
+                dr.Close();
+            }
         }
     }
 }

@@ -9,39 +9,27 @@ using MySql.Data.MySqlClient;
 namespace HotelManag.Model
 {
   
-    public static class cnxConfig
+    public class cnxConfig
     {  
         static string mycon = "server =localhost; Uid=root; password = ; persistsecurityinfo = True; database =hotelman; SslMode = none";
         static MySqlConnection con = new MySqlConnection(mycon);
         static DataTable dt = new DataTable();
         static MySqlCommand cmd = null;
-
-     
-        public ListReservation GetReservations()
+        public static MySqlConnection Connect()
         {
-            try
-            {
-                cmd = new MySqlCommand("Select * from reservation", con);
-                con.Open();
-                dt.Load(cmd.ExecuteReader());
-                con.Close();
+            var server = "localhost";
+            var database = " hotelman";
+            var user = "root";
+            var password = "";
+            var port = "3306";
+            var sslM = "none";
 
-            }
-            catch (Exception ex)
-            {
-                //Response.Write("<script>alert('" + ex.Message + "')</script>");
-                con.Close();
-            }
-            ListReservation List = new ListReservation();
-            for (int i = 0; i < dt.Rows.Count; i++)
-            {
-                Reservation res = new Reservation();
-                res.res_id = Convert.ToInt32(dt.Rows[i]["res_id"]);
-                res.RoomNum = Convert.ToInt32(dt.Rows[i]["room_num"]);
-                res.DateResr = Convert.ToDateTime(dt.Rows[i]["res_date"]);
-                List.listRes.Add(res);
-            }
-            return List;
+            var connectionString = String.Format("server={0};port={1};user id={2}; password={3}; database={4}; SslMode={5}", server, port, user, password, database, sslM);
+
+            MySqlConnection connection = new MySqlConnection(connectionString);
+            connection.Open();
+            return connection;
         }
+     
     }
 }
