@@ -17,9 +17,6 @@ namespace HotelManag
             InitializeComponent();
         }
 
-        private void ucHotel1_Load(object sender, EventArgs e)
-        {
-
-        }
+       
     }
 }

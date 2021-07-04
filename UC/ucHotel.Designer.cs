@@ -157,7 +157,7 @@
             // 
             this.lbl_Date.AutoSize = true;
             this.lbl_Date.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Date.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lbl_Date.ForeColor = System.Drawing.Color.Gold;
             this.lbl_Date.Location = new System.Drawing.Point(45, 324);
             this.lbl_Date.Name = "lbl_Date";
             this.lbl_Date.Size = new System.Drawing.Size(154, 21);

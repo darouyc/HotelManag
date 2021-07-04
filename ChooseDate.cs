@@ -33,11 +33,6 @@ namespace HotelManag
             this.Close();
         }
 
-        private void ChooseDate_Load(object sender, EventArgs e)
-        {
-
-        }
-
-       
+        
     }
 }

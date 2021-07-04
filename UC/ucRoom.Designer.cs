@@ -55,7 +55,7 @@
             this.bookedToolStripMenuItem,
             this.freeToolStripMenuItem});
             this.StatMenu.Name = "StatMenu";
-            this.StatMenu.Size = new System.Drawing.Size(181, 70);
+            this.StatMenu.Size = new System.Drawing.Size(102, 48);
             // 
             // bookedToolStripMenuItem
             // 
@@ -67,7 +67,7 @@
             // freeToolStripMenuItem
             // 
             this.freeToolStripMenuItem.Name = "freeToolStripMenuItem";
-            this.freeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.freeToolStripMenuItem.Size = new System.Drawing.Size(101, 22);
             this.freeToolStripMenuItem.Text = "Free";
             this.freeToolStripMenuItem.Click += new System.EventHandler(this.freeToolStripMenuItem_Click);
             // 
@@ -75,7 +75,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.BackColor = System.Drawing.Color.White;
             this.ContextMenuStrip = this.StatMenu;
             this.Controls.Add(this.lbl_numRoom);
             this.Name = "ucRoom";

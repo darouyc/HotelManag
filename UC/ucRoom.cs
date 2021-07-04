@@ -21,8 +21,19 @@ namespace HotelManag.UC
             {
                 if (res.RoomNum == Num && res.DateResr.Date == ResDate.Date)
                 {
-                    this.BackColor = Color.Cyan;
+                    //  PictureBox pb = new PictureBox();
+                    //  pb.Location = new Point(64, 5);
+                    // pb.Size = new Size(50, 50);
+                    // pb.Image = Image.FromFile("C:/Users/Hp EliteBook/Desktop/lsi2/s4/NET/Hotel_management/HotelManag/HotelManag/pictures/close.png");
+                    //pb.Visible = true;
+
+                    Image img = new Bitmap(@"C:/Users/Hp EliteBook/Desktop/lsi2/s4/NET/Hotel_management/HotelManag/HotelManag/pictures/close.png");
+                    this.BackgroundImage = img;
+                    this.BackgroundImageLayout = ImageLayout.Center;
                     return;
+                }
+                else {
+                    this.BackgroundImage = null;
                 }
             }
             this.BackColor = Color.White;
